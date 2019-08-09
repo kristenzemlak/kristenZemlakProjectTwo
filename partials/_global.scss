@@ -1,0 +1,109 @@
+body {
+    background: $secondary;
+    font-family: $baseFont;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: $dark; 
+    h5 {
+        font-weight: 700;
+    }     // comment date stamp in blog
+    nav a {
+        font-weight: 700; 
+        text-align: center; 
+        line-height: 29px;
+    }     // main nav
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+.button {
+    font-family: $headingFont;
+    font-style: italic; 
+    text-transform: uppercase; 
+}
+
+// (boat ride..., get in..., blog)
+h1 {
+    font-size: 79px;
+    line-height: 64px; 
+    color: $accent; 
+}
+
+// (new destina...,communi...,blog...,next destina...)
+h2 {
+    font-size: 45px;
+    line-height: 99.8px;
+}
+
+// (boxes; our program...,new location...)
+h3 {
+    font-size: 40px; 
+    line-height: 58px;
+    letter-spacing: 1.3px;
+    color: $secondary; 
+}
+
+// side back headings (our miss...,recent...)
+h4 {
+    font-size: 25px;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+    color: $accent; 
+}
+
+// form submit button
+.submit, 
+.post, 
+.readMore {
+    font-size: 22.4px;
+    text-align: center; 
+    line-height: 41.6px;
+    background: $accent; 
+}
+
+.post {
+    color: $accent;
+    background: $primary; 
+}
+
+// general styles
+
+.wrapper {
+    max-width: 1600px;
+    padding: 0 50px; 
+    margin: 0 auto; 
+}
+
+img {
+    display: block; 
+    width: 100%;
+}
+
+ul {
+    padding: 0; 
+}
+
+li {
+    list-style: none;
+}
+
+a {
+text-decoration: none;
+color: #fff; 
+border-bottom: 2px dotted transparent; 
+}
+
+a:hover, 
+a:focus, 
+.button:hover, 
+.button:focus { 
+    border-bottom: 2px solid $accent;
+}
+
+* {
+    border: 1px solid tomato; 
+}

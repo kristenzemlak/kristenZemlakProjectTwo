@@ -1,0 +1,36 @@
+header {
+    height: 85vh; 
+    background-image: url("../images/home-header.jpg");
+    background-repeat: no-repeat;
+    position: relative; 
+    h1, 
+    img {
+        width: 50%;
+    }
+}
+
+header img {
+    position: absolute; 
+    bottom: -100px; 
+    right: 0; 
+}
+
+header ul {
+    display:flex;
+    li {
+        width: 100px; 
+    }
+}
+
+.homeContainer {
+    display:flex; 
+    align-items: space-between;
+}
+
+nav {
+    padding-top: 50px; 
+}
+
+h1 {
+    padding-top: 250px; 
+}
