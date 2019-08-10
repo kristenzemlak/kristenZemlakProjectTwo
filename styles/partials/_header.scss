@@ -2,6 +2,7 @@ header {
     height: 85vh; 
     background-image: url("../images/home-header.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     position: relative; 
     h1, 
     img {
@@ -24,7 +25,9 @@ header ul {
 
 .homeContainer {
     display:flex; 
-    align-items: space-between;
+    flex-direction: column; 
+    align-content: space-between;
+    // need to prevent collapse between nav & h1 that's not paddint-top 250px (below)***********
 }
 
 nav {
@@ -32,5 +35,5 @@ nav {
 }
 
 h1 {
-    padding-top: 250px; 
+    padding-top: 300px; 
 }

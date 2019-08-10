@@ -1,0 +1,135 @@
+// RESOURCES SECTION //////////////
+
+.resources {
+    padding: 150px 0 100px;;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.resources .item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+        padding: 0; 
+    }
+}
+
+.resources .icon {
+    width: 50px;
+    height: 50px;
+    background: $accent; 
+    border-radius: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.resources .info {
+    width: calc(100% - 50px);
+    padding-left: 2%; 
+}
+
+.resources .item1,
+.resources .item2, 
+.resources .item3,
+.resources .item4 {
+    padding-bottom: 5%;
+}
+
+.resources .item1, 
+.resources .item3 {
+    padding-right: 2%; 
+}
+
+.resources .item2, 
+.resources .item4 {
+    padding-left: 2%; 
+}
+
+
+// ABOUT SECTION ///////////////////
+
+.about {
+    background: $primary; 
+    color: white; 
+    display: flex; 
+    position: relative;
+}
+
+.aboutLeft, 
+.aboutRight {
+    width: 50%;
+}
+
+.aboutLeft {
+    text-align: left;
+    display: block; 
+}
+
+.about img {
+    position: relative; 
+}
+
+.aboutLeft img {
+    box-shadow: 15px 15px $accent;left: -100px;
+    top: -40px;
+}
+
+.aboutRight img {
+    box-shadow: -15px -15px $accent;right: -100px;
+    bottom: -40px;
+}
+
+.about .info {
+    padding: 75px; 
+}
+
+
+// ARTICLE SECTION ///////////////////
+
+article {
+    padding: 100px;
+}
+
+.featured {
+    text-align: center; 
+    img {
+        width: 100%;
+    }
+}
+
+.preview {
+    display: flex;
+}
+
+.preview img {
+    width: 300px; 
+    height: 300px; 
+    box-shadow: -15px -15px $accent;
+    right: -100px;
+    bottom: -40px;
+}
+
+.preview div {
+    width: 100%;
+}
+
+.preview .info {
+    padding: 0 0 0 75px; 
+}
+
+// GALLERY SECTION ///////////////////
+
+.gallery {
+    background: $primary; 
+    padding: 100px 0;
+}
+
+.gallery .container {
+    display: flex; 
+    li {
+        margin: 10px; 
+    }
+}

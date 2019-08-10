@@ -24,6 +24,8 @@ h5,
     font-family: $headingFont;
     font-style: italic; 
     text-transform: uppercase; 
+    margin: 0; 
+    padding: 0; 
 }
 
 // (boat ride..., get in..., blog)
@@ -36,7 +38,8 @@ h1 {
 // (new destina...,communi...,blog...,next destina...)
 h2 {
     font-size: 45px;
-    line-height: 99.8px;
+    line-height: 45px; 
+    // line-height: 99.8px;
 }
 
 // (boxes; our program...,new location...)
@@ -74,7 +77,7 @@ h4 {
 
 .wrapper {
     max-width: 1600px;
-    padding: 0 50px; 
+    padding: 0 100px; 
     margin: 0 auto; 
 }
 
@@ -98,10 +101,19 @@ border-bottom: 2px dotted transparent;
 }
 
 a:hover, 
-a:focus, 
+a:focus { 
+    border-bottom: 2px solid $accent;
+}
+
 .button:hover, 
 .button:focus { 
-    border-bottom: 2px solid $accent;
+    border-bottom: 2px solid $primary;
+}
+
+.button {
+    background: $accent; 
+    color: $dark; 
+    padding: 10px 20px;
 }
 
 * {
