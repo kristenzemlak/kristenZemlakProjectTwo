@@ -1,3 +1,7 @@
+* {
+    border: 1px solid tomato; 
+}
+
 body {
     background: $secondary;
     font-family: $baseFont;
@@ -87,11 +91,8 @@ img {
 }
 
 ul {
-    padding: 0; 
-}
-
-li {
     list-style: none;
+    padding: 0; 
 }
 
 a {
@@ -114,8 +115,4 @@ a:focus {
     background: $accent; 
     color: $dark; 
     padding: 10px 20px;
-}
-
-* {
-    border: 1px solid tomato; 
 }

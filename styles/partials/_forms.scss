@@ -1,0 +1,46 @@
+.commentForm {
+    padding: 0 100px; 
+}
+
+.halfWidth {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.username, 
+.useremail, 
+.message  { 
+    background: transparent;color: #fff; 
+    border-bottom: none; 
+    padding: 10px;
+}
+
+.username, 
+.useremail {
+    width: 48%;
+    margin: 0 0 40px 0;
+    border-bottom: 2px solid $accent;  
+    justify-content: space-between;
+}
+
+.message, 
+.submit {
+    width: 100%; 
+    border: 2px solid $accent;  
+}
+
+.button {
+    background: $primary; 
+    color: $accent; 
+    border: none; 
+    margin: 40px 0;
+}
+
+.contactForm {
+    padding: 100px; 
+    background: $primary;
+    .submit {
+        background: $accent;
+        color: $primary; 
+    }
+}

@@ -73,12 +73,14 @@
 }
 
 .aboutLeft img {
-    box-shadow: 15px 15px $accent;left: -100px;
+    box-shadow: 15px 15px $accent;
+    left: -100px;
     top: -40px;
 }
 
 .aboutRight img {
-    box-shadow: -15px -15px $accent;right: -100px;
+    box-shadow: -15px 15px $accent;
+    right: -100px;
     bottom: -40px;
 }
 
@@ -107,7 +109,7 @@ article {
 .preview img {
     width: 300px; 
     height: 300px; 
-    box-shadow: -15px -15px $accent;
+    box-shadow: -15px 15px $accent;
     right: -100px;
     bottom: -40px;
 }
@@ -129,7 +131,8 @@ article {
 
 .gallery .container {
     display: flex; 
+    justify-content: space-between;
     li {
-        margin: 10px; 
+        width: 31%; 
     }
 }

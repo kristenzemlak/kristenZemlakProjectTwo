@@ -216,7 +216,7 @@ template {
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -228,6 +228,10 @@ template {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+* {
+  border: 1px solid tomato;
 }
 
 body {
@@ -313,11 +317,8 @@ img {
 }
 
 ul {
-  padding: 0;
-}
-
-li {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -340,10 +341,6 @@ a:focus {
   background: #fdd908;
   color: #002023;
   padding: 10px 20px;
-}
-
-* {
-  border: 1px solid tomato;
 }
 
 header {
@@ -392,7 +389,77 @@ nav {
 }
 
 h1 {
-  padding-top: 300px;
+  padding-top: 400px;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+  color: white;
+  padding-top: 150px;
+  height: 50vh;
+}
+
+.blogHeader {
+  background-image: url("../images/blog-header.jpg");
+}
+
+.contactHeader {
+  background-image: url("../images/contact-header.jpg");
+}
+
+.commentForm {
+  padding: 0 100px;
+}
+
+.halfWidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.username,
+.useremail,
+.message {
+  background: transparent;
+  color: #fff;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.username,
+.useremail {
+  width: 48%;
+  margin: 0 0 40px 0;
+  border-bottom: 2px solid #fdd908;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message,
+.submit {
+  width: 100%;
+  border: 2px solid #fdd908;
+}
+
+.button {
+  background: #0d457f;
+  color: #fdd908;
+  border: none;
+  margin: 40px 0;
+}
+
+.contactForm {
+  padding: 100px;
+  background: #0d457f;
+}
+
+.contactForm .submit {
+  background: #fdd908;
+  color: #0d457f;
 }
 
 .resources {
@@ -489,8 +556,8 @@ h1 {
 }
 
 .aboutRight img {
-  -webkit-box-shadow: -15px -15px #fdd908;
-          box-shadow: -15px -15px #fdd908;
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
   right: -100px;
   bottom: -40px;
 }
@@ -520,8 +587,8 @@ article {
 .preview img {
   width: 300px;
   height: 300px;
-  -webkit-box-shadow: -15px -15px #fdd908;
-          box-shadow: -15px -15px #fdd908;
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
   right: -100px;
   bottom: -40px;
 }
@@ -543,10 +610,129 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .gallery .container li {
-  margin: 10px;
+  width: 31%;
+}
+
+.wrapperBlog {
+  max-width: 1600px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.blogContainer,
+.contactContainer {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+}
+
+.contactArticle,
+.blogArticle {
+  padding-right: 0;
+  width: 70%;
+  position: relative;
+  top: -400px;
+  margin-bottom: -500px;
+}
+
+.contactArticle img,
+.blogArticle img {
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
+}
+
+.blogArticleInfo {
+  padding: 100px;
+  border: 5px solid #fdd908;
+  position: relative;
+  left: -15px;
+}
+
+.blogComment {
+  padding: 100px;
+}
+
+.comment1,
+.comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment1 img,
+.comment2 img {
+  width: 25%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.comment1 .info,
+.comment2 .info {
+  width: 75%;
+}
+
+.blogAside,
+.contactAside {
+  margin-left: 100px;
+  width: 30%;
+  position: relative;
+}
+
+.blogAside img,
+.contactAside img {
+  position: relative;
+  left: -100px;
+  width: 120%;
+}
+
+.blogAside a,
+.contactAside a {
+  color: #002023;
+}
+
+.blogAside i,
+.contactAside i {
+  color: #0d457f;
+}
+
+.blogAsideInfo {
+  background: #0d457f;
+  color: white;
+  padding: 520px 50px 30px 50px;
+  position: relative;
+  top: -480px;
+  z-index: -1;
+}
+
+.recentPosts {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: white;
+  margin: 0;
+}
+
+.socialInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
