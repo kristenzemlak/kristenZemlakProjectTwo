@@ -1,6 +1,4 @@
-* {
-    border: 1px solid tomato; 
-}
+// GLOBAL STYLES //
 
 body {
     background: $secondary;
@@ -9,44 +7,28 @@ body {
     line-height: 28px;
     letter-spacing: 1px;
     color: $dark; 
-    h5 {
-        font-weight: 700;
-    }     // comment date stamp in blog
-    nav a {
-        font-weight: 700; 
-        text-align: center; 
-        line-height: 29px;
-    }     // main nav
+    h1, 
+    h2, 
+    h3,     
+    h4 {
+        font-family: $headingFont;
+        font-style: italic; 
+        text-transform: uppercase;
+        margin: 0; 
+    }
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-.button {
-    font-family: $headingFont;
-    font-style: italic; 
-    text-transform: uppercase; 
-    margin: 0; 
-    padding: 0; 
-}
-
-// (boat ride..., get in..., blog)
 h1 {
     font-size: 79px;
-    line-height: 64px; 
+    line-height: 100px; 
     color: $accent; 
 }
 
-// (new destina...,communi...,blog...,next destina...)
 h2 {
     font-size: 45px;
-    line-height: 45px; 
-    // line-height: 99.8px;
+    line-height: 45px;
 }
 
-// (boxes; our program...,new location...)
 h3 {
     font-size: 40px; 
     line-height: 58px;
@@ -54,7 +36,6 @@ h3 {
     color: $secondary; 
 }
 
-// side back headings (our miss...,recent...)
 h4 {
     font-size: 25px;
     line-height: 58px;
@@ -62,27 +43,22 @@ h4 {
     color: $accent; 
 }
 
-// form submit button
-.submit, 
-.post, 
-.readMore {
-    font-size: 22.4px;
-    text-align: center; 
-    line-height: 41.6px;
-    background: $accent; 
-}
+// GENERAL STYLES //
 
-.post {
-    color: $accent;
-    background: $primary; 
-}
-
-// general styles
-
-.wrapper {
-    max-width: 1600px;
+.wrapper, 
+.modifiedWrapper, 
+.articleWrapper {
+    max-width: 1650px;
     padding: 0 100px; 
     margin: 0 auto; 
+}
+
+.modifiedWrapper {
+    padding: 0;
+}
+
+.articleWrapper {
+    padding: 100px; 
 }
 
 img {
@@ -96,23 +72,41 @@ ul {
 }
 
 a {
-text-decoration: none;
-color: #fff; 
-border-bottom: 2px dotted transparent; 
-}
-
-a:hover, 
-a:focus { 
-    border-bottom: 2px solid $accent;
-}
-
-.button:hover, 
-.button:focus { 
-    border-bottom: 2px solid $primary;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 700; 
+    text-align: center; 
+    line-height: 29px;
+    border-bottom: 3px solid transparent; 
+    &:hover, 
+    &:focus { 
+        border-bottom: 3px solid $accent;
+    }
 }
 
 .button {
-    background: $accent; 
-    color: $dark; 
+    font-family: $headingFont;
+    font-style: italic; 
+    text-transform: uppercase; 
+    margin-top: 10px; 
+    border: 3px solid transparent;
     padding: 10px 20px;
+}
+
+.accentButton {
+    background: $accent; 
+    color: $dark;
+    &:hover,
+    &:focus {
+        border: 3px solid white; 
+    }
+}
+
+.primaryButton {
+    background: $primary; 
+    color: $accent; 
+    &:hover,
+    &:focus {
+        border: 3px solid black; 
+    }
 }

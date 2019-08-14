@@ -15,25 +15,26 @@
     <!-- style sheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header id="contact" class="contactHeader">
         <div class="wrapper">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <h1>Get in Touch</h1>
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Get in Touch</h1>
         </div><!-- /.wrapper -->
     </header>
     
-    <main>
-        <div class="wrapperBlog">
+    <main class="contact">
+        <div class="modifiedWrapper">
+
             <div class="contactContainer">
-    
                 <article class="contactArticle">
                     <form action="#" class="contactForm">
                         <div class="halfWidth">
@@ -42,42 +43,41 @@
  
                             <label class="visuallyHidden" for="email">Email address</label>
                             <input type="text" name="useremail" class="useremail" id="useremail" placeholder="Email Address">
-                        </div>
+                        </div> <!-- /.halfWidth -->
 
-                        <label class="fullWidth visuallyHidden" for="message">Comment"</label>
-                        <textarea name="message" class="message" id="message" placeholder="Comment"cols="30" rows="10"></textarea>
-
-                        <label class="visuallyHidden" for="submit">Post Comment</label>
-
-                        <input type="submit" name="submit" class="submit button" id="submit" value="Post Comment">
+                        <div class="fullWidth">
+                            <label class="fullWidth visuallyHidden" for="message">Comment"</label>
+                            <textarea name="message" class="message" id="message" placeholder="Comment"cols="30" rows="10"></textarea>
+    
+                            <label class="visuallyHidden" for="submit">Post Comment</label>
+                            <input type="submit" name="submit" class="submit button" id="submit" value="Post Comment">
+                        </div> <!-- /.fullWidth -->
                     </form> <!-- /.contactForm -->
-                </article> <!-- /.blogArticle -->
+                </article> <!-- /.contactArticle -->
         
                 <aside class="contactAside">
+                    <div class="contactAsideInfo">
                         <ul class="socialInfo">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                        </ul>
-                        
-
+                        </ul> <!-- /.socialInfo -->
                         <ul class="contactInfo">
                             <li><a href="to:info@email.com">info@email.com</a></li>
                             <li>123 - 456 - 7890</li>
                             <li>123 Queen Street West, Unit 10</li>
                             <li>Toronto, Ontaro</li>
                             <li>M5V 2D5</li>
-                        </ul>
-                        
-                    </div><!-- /.blogAsideInfo-->
-                </aside> <!-- /.blogAside -->
-            </label> <!-- /.blog-container -->
+                        </ul> <!-- /.contactInfo -->
+                    </div> <!-- /.contactAsideInfo -->
+                </aside> <!-- /.contactAside -->
+            </div> <!-- /.contactContainer -->
             
-        </div> <!-- /.wrapperBlog -->
+        </div> <!-- /.modifiedWrapper -->
     </main>
     <footer>
-        <p>Copyright &copy; 2019 HackerYou</p>
+        <p>&copy; 2019 HackerYou</p>
     </footer>
 </body>
 </html>

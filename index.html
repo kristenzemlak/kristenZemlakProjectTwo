@@ -14,61 +14,64 @@
 
     <!-- style sheet -->
     <link rel="stylesheet" href="./styles/styles.css">
-
 </head>
-<body>
 
+<body>
     <header id="home" class="homeHeader">
         <div class="wrapper">
-            <div class="homeContainer"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
+            
+            <div class="homeContainer">
+                <div class="homeLeft">
+                    <nav>
+                        <ul class="mainMenu">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <h1>Boat Ride Adventures</h1>
-            </div><!-- /.homeContainer -->
-            <img src="./images/home-box-header.png" alt="Feature image of Grand Voyage II Cruiser">
-        </div><!-- /.wrapper -->
+                        </ul>
+                    </nav>
+                    <h1>Boat Ride <br>Adventures</h1>
+                </div> <!-- /.homeLeft -->
+                <img class="featureImage" src="./images/home-box-header.png" alt="Seven-story cruis ship at seaat sea.">
+            </div> <!-- /.headerContainer -->
+
+        </div> <!-- /.wrapper -->
     </header>
 
     <main>
-        <section>
+        <section class="resources" id="resources">
             <div class="wrapper">
-                <ul class="resources">
-                    <li class="item item1">
+                <ul class="resourcesContainer">
+                    <li>
                         <div class="icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt visibilityHidden" ></i>
                         </div><!-- /.icon-->
                         <div class="info">
                             <h2>New Destinations</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi provident illo consequatur fugit iste harum?</p>
                         </div><!-- /.info -->
                     </li>
-                    <li class="item item2">
+                    <li>
                         <div class="icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users visibilityHidden"></i>
                         </div><!-- /.icon-->
                         <div class="info">
                             <h2>Community</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi provident illo consequatur fugit iste harum?</p>
                         </div><!-- /.info -->
                     </li>
-                    <li class="item item3">
+                    <li>
                         <div class="icon">
-                            <i class="fas fa-file"></i>
+                            <i class="fas fa-file visibilityHidden"></i>
                         </div><!-- /.icon-->
                         <div class="info">
                             <h2>Blog</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi provident illo consequatur fugit iste harum?</p>
                         </div><!-- /.info -->
                     </li>
-                    <li class="item item4">
+                    <li>
                         <div class="icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone visibilityHidden"></i>
                         </div><!-- /.icon-->
                         <div class="info">
                             <h2>Get In Touch</h2>
@@ -77,66 +80,69 @@
                     </li>
                 </ul> <!-- /.resources -->
             </div> <!-- /.wrapper -->
-        </section>
+        </section> <!-- /.resources -->
 
-        <section>
-            <div class="wrapper about" id="about">
-                <div class="aboutLeft">
-                    <img src="./images/left-image.jpg" alt="Boat out on the sea">
-                    <div class="info">
-                        <h3>New Locations</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem rerum, doloremque placeat atque illum.</p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                </div> <!-- ./aboutLeft -->
-        
-                <div class="aboutRight">
-                    <div class="info">
-                        <h3>Our Programs</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem rerum, doloremque placeat atque illum.</p>
-                        <a href="#" class="button">Read More</a>
-                    </div>
-                    <img src="./images/right-image.jpg" alt="Bow of boat shot from above">
-                </div> <!-- /.aboutRight -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="aboutContainer">
+
+                    <div class="aboutLeft">
+                        <img src="./images/left-image.jpg" alt="Seven-story cruis ship at seaat sea" class="leftImage" >
+                        <div class="aboutInfo">
+                            <h3>New Locations</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem rerum, doloremque placeat atque illum.</p>
+                            <a href="#" class="button accentButton">Read More</a>
+                        </div> <!-- ./aboutInfo -->
+                    </div> <!-- ./aboutLeft -->
+                        
+                    <div class="aboutRight">
+                        <div class="aboutInfo">
+                            <h3>Our Programs</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam autem rerum, doloremque placeat atque illum.</p>
+                            <a href="#" class="button accentButton">Read More</a>
+                        </div> <!-- ./aboutInfo -->
+                        <img src="./images/right-image.jpg" alt="Close-up bow of sail boat at sea, shot from above" class="rightImage">
+                    </div> <!-- /.aboutRight -->
+
+                </div> <!-- /.aboutContainer -->
             </div> <!-- /.wrapper -->
         </section> <!-- /.about -->
 
-        <article class="featured">
-            <div class="wrapper">
-                <h2>Extra Vacation Days?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aspernatur excepturi accusantium ratione aliquid corrupti delectus aliquam modi saepe esse. Eaque, animi? Ullam nemo quasi non animi numquam tenetur quam.</p>
-                <a href="#" class="button">Read More</a>
-            </div> <!--/.wrapper -->
-        </article>
+        <section class="articles" id="articles">
+            <article class="featureArticle articleWrapper">
+                    <h2>Extra Vacation Days?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, aspernatur excepturi accusantium ratione aliquid corrupti delectus aliquam modi saepe esse. Eaque, animi? Ullam nemo quasi non animi numquam tenetur quam.</p>
+                    <a href="#" class="button primaryButton">Read More</a>
+            </article> <!-- /.featureArticle .modifiedWrapper-->
+    
+            <div class="featureBanner">
+                <img src="./images/banner.jpg" alt="Several row-boats on a picturesque lake.">
+            </div> <!-- /.bannerImage -->
+    
+            <article class="previewArticle articleWrapper">
+                <img src="./images/small-box.jpg" alt="Back of woman who's looking out over artic waters." class="previewImage">
+                <div class="previewInfo">
+                    <h2>Win Trip of a Lifetime</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sapiente repellat hic eveniet, provident nam possimus? Dolor pariatur error aspernatur, fugiat consectetur voluptas, est rerum magnam in amet tempora ut atque magni sint perspiciatis consequuntur minima! Libero laboriosam dolorum delectus, officia porro, veniam placeat aliquid fugiat unde molestiae perspiciatis incidunt.</p>
+                    <a href="#" class="button primaryButton">Read More</a>
+                </div> <!-- /.previewInfo -->
+            </article> <!-- /.previewArticle .modifiedWrapper -->
+        </section> <!-- /.articles -->
 
-        <section class="banner">
-            <img src="./images/banner.jpg" alt="Boat in a bay">
-        </section>
-
-        
-        <article class="preview">
-            <img src="./images/small-box.jpg" alt="Boat in a bay">
-            <div class="info">
-                <h2>Win Trip of a Lifetime</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sapiente repellat hic eveniet, provident nam possimus? Dolor pariatur error aspernatur, fugiat consectetur voluptas, est rerum magnam in amet tempora ut atque magni sint perspiciatis consequuntur minima! Libero laboriosam dolorum delectus, officia porro, veniam placeat aliquid fugiat unde molestiae perspiciatis incidunt.</p>
-                <a href="#" class="button">Read More</a>
-            </div> <!-- /.info -->
-        </article>
-
-        <section class="gallery">
-            <div class="wrapper">
-                <ul class="container">
+        <section class="gallery" id="gallery">
+            <div class="modifiedWrapper">
+                <ul class="galleryContainer">
                     <li><img src="./images/gallery-image-1.jpg" alt="first gallery image - click to view on Instagram"></li>
                     <li><img src="./images/gallery-image-2.jpg" alt="second gallery image - click to view on Instagram"></li>
                     <li><img src="./images/gallery-image-3.jpg" alt="third gallery image - click to view on Instagrame"></li>
                 </ul> <!-- /.container -->
-            </div> <!-- /.wrapper -->
+            </div> <!-- /.modifiedWrapper -->
         </section> <!-- /.gallery -->
 
     </main>
 
     <footer>
-        <p>Copyright &copy; 2019 HackerYou</p>
+        <p>&copy; 2019 HackerYou</p>
     </footer>
 
 </body>

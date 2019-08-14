@@ -15,23 +15,24 @@
     <!-- style sheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header id="blog" class="blogHeader">
-            <div class="wrapper">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <h1>Blog</h1>
-            </div><!-- /.wrapper -->
-        </header>
+        <div class="wrapper">
+            <nav>
+                <ul class="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Blog</h1>
+        </div><!-- /.wrapper -->
+    </header>
 
-    <main>
-        <div class="wrapperBlog">
+    <main class="blog">
+        <div class="modifiedWrapper">
             <div class="blogContainer">
     
                 <article class="blogArticle">
@@ -43,41 +44,39 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum doloremque rerum obcaecati vero neque ipsum delectus odit magnam repudiandae, tenetur illum esse non ex sequi unde deserunt, quod commodi quibusdam!</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorem ipsa perferendis repudiandae dolores in voluptatem! Provident neque impedit est ipsam molestiae atque, explicabo porro voluptas? Et officiis esse perferendis?</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium temporibus totam, ipsam deleniti voluptatum tenetur.</p>
-                    </div>
-                    <aside class="blogComment">
+                    </div> <!-- /.blogArticleInfo -->
+                    <div class="blogComment">
                             <h2>Comments:</h2>
                             <div class="comment1">
                                 <img src="./images/comment-1.jpg" class="profilePic" alt="Author profile picture">
                                 <div class="info">
                                     <p><strong>Tuesday October 9, 2019 by Ali</strong></p>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magnam quam accusantium quo doloribus eum fuga incidunt, pariatur molestias blanditiis.</p>
-                                </div> <!-- /.comment1 -->
-                            </div> <!-- /.info -->
-        
+                                </div> <!-- /.info-->
+                            </div> <!-- /.comment1 -->
                             <div class="comment2">
-                                    <img src="./images/comment-2.jpg" class="profilePic" alt="Author profile picture">
-                                    <div class="info">
-                                        <p><strong>Wednesday October 10, 2019 by Lisa</strong></p>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magnam quam accusantium quo doloribus eum fuga incidunt, pariatur molestias blanditiis.</p>
-                                    </div> <!-- /.comment2 -->
+                                <img src="./images/comment-2.jpg" class="profilePic" alt="Author profile picture">
+                                <div class="info">
+                                    <p><strong>Wednesday October 10, 2019 by Lisa</strong></p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magnam quam accusantium quo doloribus eum fuga incidunt, pariatur molestias blanditiis.</p>
                                 </div> <!-- /.info -->
-                    </aside>
+                            </div> <!-- /.comment2 -->
+                    </div> <!-- /.blogComment -->
                     <form action="#" class="commentForm">
                         <div class="halfWidth">
                             <label class="visuallyHidden" for="username">Name</label>
-                            <input type="text" name="username" class="username" id="username" placeholder="Name">
+                            <input type="text" name="username" class="username dark" id="username" placeholder="Name">
 
                             <label class="visuallyHidden" for="email">Email Address</label>
-                            <input type="text" name="useremail" class="useremail" id="useremail" placeholder="Email address">
-                        </div>
-
-                        <label class="visuallyHidden" for="message">Comment"</label>
-                        <textarea name="message" class="message" id="message" placeholder="Comment"cols="30" rows="10"></textarea>
-
-                        <label class="visuallyHidden" for="submit">Post Comment</label>
-
-                        <input type="submit" name="submit" class="submit button" id="submit" value="Post Comment">
-                    </form>
+                            <input type="text" name="useremail" class="useremail dark" id="useremail" placeholder="Email address">
+                        </div> <!-- /.halfWidth -->
+                        <div class="fullWidth">
+                            <label class="visuallyHidden" for="message">Comment"</label>
+                            <textarea name="message" class="message dark" id="message" placeholder="Comment"cols="30" rows="10"></textarea>
+                            <label class="visuallyHidden" for="submit">Post Comment</label>
+                            <input type="submit" name="submit" class="submit button" id="submit" value="Post Comment">
+                        </div> <!-- /.halfWidth -->
+                    </form> <!-- /.commentForm-->
                 </article> <!-- /.blogArticle -->
         
                 <aside class="blogAside">
@@ -91,15 +90,15 @@
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Lorem ipsum dolor sit amet</li>
-                        </ul>
-                    </div><!-- /.blogAsideInfo-->
+                        </ul> <!-- /.recentPosts-->
+                    </div> <!-- /.blogAsideInfo-->
                 </aside> <!-- /.blogAside -->
             </label> <!-- /.blog-container -->
             
-        </div> <!-- /.wrapperBlog -->
+        </div> <!-- /.modifiedWrapper -->
     </main>
     <footer>
-        <p>Copyright &copy; 2019 HackerYou</p>
+        <p>&copy; 2019 HackerYou</p>
     </footer>
 </body>
 </html>

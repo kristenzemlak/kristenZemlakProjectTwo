@@ -1,51 +1,17 @@
+// GENERAL HEADER STYLES //
+
 header {
-    height: 85vh; 
     background-image: url("../images/home-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; 
-    h1, 
-    img {
-        width: 50%;
+}
+
+.blogHeader, 
+.contactHeader {
+    h1 {
+        color: white; 
+        padding: 10% 0 20% 0;
     }
-}
-
-header img {
-    position: absolute; 
-    bottom: -100px; 
-    right: 0; 
-}
-
-header ul {
-    display: flex;
-    li {
-        width: 100px; 
-    }
-}
-
-.homeContainer {
-    display:flex; 
-    flex-direction: column; 
-    align-content: space-between;
-    // need to prevent collapse between nav & h1 that's not paddint-top 250px (below)***********
-}
-
-nav {
-    padding-top: 50px; 
-}
-
-h1 {
-    padding-top: 400px; 
-}
-
-
-// ADDITIONAL HEADERS //////////////
-
-.blogHeader h1, 
-.contactHeader h1 {
-    color: white; 
-    padding-top: 150px; 
-    height: 50vh; 
 }
 
 .blogHeader {
@@ -56,3 +22,36 @@ h1 {
     background-image: url("../images/contact-header.jpg");
 }
 
+// NAV STYLES //
+
+.mainMenu {
+    display: flex;
+    padding-top: 10%;
+    li {
+        padding-right: 50px; 
+    }
+}
+
+// HEADER CONTAINER (HOME) //
+
+.homeContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;
+    .homeLeft { 
+        width: 40%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between; 
+        h1 {
+            padding: 20% 0 10% 0;
+        }
+    }
+    .featureImage { 
+        object-fit: contain; 
+        width: 60%;
+        position: relative; 
+        bottom: -170px; 
+        right: -100px; 
+    }
+}

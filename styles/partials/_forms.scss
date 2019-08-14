@@ -1,5 +1,11 @@
+//// FORMS ////
+
 .commentForm {
-    padding: 0 100px; 
+    padding: 0 10%; 
+    input, 
+    textarea {
+        color: $primary; 
+    }
 }
 
 .halfWidth {
@@ -19,6 +25,9 @@
 .useremail {
     width: 48%;
     margin: 0 0 40px 0;
+    border-top: none; 
+    border-left: none; 
+    border-right: none; 
     border-bottom: 2px solid $accent;  
     justify-content: space-between;
 }
@@ -29,18 +38,33 @@
     border: 2px solid $accent;  
 }
 
-.button {
-    background: $primary; 
-    color: $accent; 
-    border: none; 
-    margin: 40px 0;
+.submit, 
+.post, 
+.readMore {
+    font-size: 22.4px;
+    text-align: center; 
+    line-height: 41.6px;
+    background: $accent; 
 }
 
+.post {
+    color: $accent;
+    background: $primary; 
+}
+
+ // CONTACT FORM CUSTOMIZATION //
+
 .contactForm {
-    padding: 100px; 
+    padding: 10%; 
     background: $primary;
+    margin-right: 100px;
+    box-shadow: 15px 15px $accent;
     .submit {
         background: $accent;
         color: $primary; 
+    }
+    input, 
+    textarea {
+        color: #fff; 
     }
 }

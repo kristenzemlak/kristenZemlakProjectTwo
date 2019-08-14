@@ -1,0 +1,104 @@
+//// BLOG & CONTACT ////
+
+.blogContainer, 
+.contactContainer {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: row-reverse; 
+    position: relative; 
+}
+
+// BLOG & CONTACT ARTICLE //
+
+.contactArticle, 
+.blogArticle {
+    width: 70%; 
+    position: relative; 
+    top: -350px;
+    margin-bottom: -350px; 
+    img {
+        box-shadow: -15px 15px $accent;
+        position: relative;
+    }
+}
+
+.blogArticle {
+    position: relative; 
+    left: 0;
+    .blogArticleInfo {
+        padding: 10%; 
+        border: 5px solid $accent; 
+        border-right: transparent;
+    }
+}
+
+.blogComment {
+    padding: 10%;
+    h2 {
+        margin-bottom: 5%; 
+    }
+    .comment1,
+    .comment2 {
+    display: flex;
+    p {
+        margin-left: 5%; 
+        margin-top: 0; 
+    }
+        .profilePic {
+            width: 100px;
+            height: 100px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            box-shadow: none; 
+        }
+    } 
+}
+
+// BLOG & CONTACT ASIDE //
+
+.blogAside, 
+.contactAside {
+    margin: 0 100px;
+    width: 30%; 
+    position: relative;
+    img {
+        position: relative;  
+        left: -100px; 
+        width: 120%; 
+    }
+}
+
+.blogAsideInfo {
+    background: $primary;
+    color: white; 
+    padding: 520px 50px 30px 50px;
+    position: relative;
+    top: -480px; 
+    z-index: -1;
+    .recentPosts {
+        list-style-type: disc;
+        list-style-position: inside;
+        color: white; 
+        margin: 0; 
+    }
+}
+
+// CONTACT INFO //
+
+.socialInfo, 
+.contactInfo {
+    padding: 0 10%;
+    }
+
+.socialInfo {
+    display: flex; 
+    width: 170px;
+    justify-content: space-between; 
+    i {
+        color: $primary; 
+    }
+}
+
+.contactInfo a {
+    color: $dark;
+}

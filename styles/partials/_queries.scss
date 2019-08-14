@@ -1,0 +1,150 @@
+@media only screen and (max-width: 1400px) {
+    .homeContainer {
+        justify-content: space-between; 
+        .homeLeft {
+            width: 60%;
+        }
+        img.featureImage { 
+            width: 40%; 
+        }
+    }
+    .resourcesContainer {
+        padding: 10% 0 5%; 
+    }
+    .blogContainer, 
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactArticle, 
+    .blogArticle, 
+    .blogAside, 
+    .contactAside {
+        width: 100%; 
+        margin: auto;
+        position: static; 
+    }
+    .blogArticle img {
+        max-height: 40vh; 
+        width: 100%; 
+        object-fit: cover; 
+        margin: 0 auto;  
+    }
+
+    .blogAside, 
+    .contactAside {
+        margin-top: 5%; 
+        img {
+            display: none;
+        } 
+    }
+    .blogAsideInfo, 
+    .blogArticleInfo {
+        padding: 15%;
+        position: static;
+    }
+    .contactForm {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .homeContainer .homeLeft {
+        width: 100%;
+    }
+    .featureImage { 
+        display: none; 
+    }
+    .resourcesContainer {
+        li {
+            width: 100%; 
+        }
+    }
+    .aboutContainer {
+        flex-direction: column; 
+        .aboutLeft, 
+        .aboutRight {
+            width: 100%;
+            text-align: center; 
+        .aboutInfo {
+            padding: 10% 0; 
+        }
+        .rightImage, 
+        .leftImage {
+            display: none; 
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper, 
+    .modifiedWrapper, 
+    .articleWrapper {
+        padding: 0 50px;
+    }
+    h1 {
+        font-size: 60px; 
+        line-height: 60px;
+    }
+    h2, 
+    h3, 
+    h4 {
+        font-size: 28px; 
+        line-height: 35px;
+    }
+    .featureArticle, 
+    .previewArticle {
+        margin: 15% 0; 
+    }
+    .galleryContainer {
+    flex-direction: column;
+    padding: 0; 
+    li {
+        width: 100%;
+        margin-bottom: 5%; 
+    }   
+}
+
+@media only screen and (max-width: 560px) {
+    h1 {
+        font-size: 30px; 
+        line-height: 40px;
+    }
+    h2, 
+    h3, 
+    h4 {
+        font-size: 20px; 
+        line-height: 25px;
+    }
+    p, 
+    a {
+        font-size: 16px; 
+        line-height: 26px; 
+    }
+    .mainMenu li {
+        padding-right: 10px; 
+        }
+    }
+    .previewArticle {
+        text-align: center;
+            img {
+                display: none;  
+            }
+        }
+    }  
+    .profilePic {
+        display: none;  
+    } 
+    .halfWidth {
+        flex-direction: column;
+        .username, 
+        .useremail {
+            width: 100%;
+        }
+    }
+    .submit, 
+    .post, 
+    .readMore {
+        font-size: 16px; 
+    }
+}
